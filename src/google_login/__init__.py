@@ -19,4 +19,4 @@ def use_driver_with_login(username, password):
         while driver.get_current_url() != "https://myaccount.google.com/?utm_source=sign_in_no_continue":
             time.sleep(0.1)
 
-        yield driver
+        yield driver.driver
